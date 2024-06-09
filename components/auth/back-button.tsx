@@ -10,7 +10,7 @@ type BackButtonProps = {
 
 export default function BackButton({ href, label }: BackButtonProps) {
   return (
-    <Button className="font-medium w-full" asChild>
+    <Button className="font-medium w-full" variant="link" asChild>
       <Link href={href}>{label}</Link>
     </Button>
   );
